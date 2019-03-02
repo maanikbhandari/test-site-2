@@ -1,0 +1,115 @@
+@mixin display-flex($flex) {
+  $oldflex: $flex;
+
+  @if $flex == flex {
+    $oldflex: flexbox;
+  } @else if $flex == inline-flex {
+    $oldflex:  inline-flexbox;
+  }
+
+  display: -ms- + $oldflex;
+  display: -webkit- + $oldflex; // WiiU
+  display: $flex;
+}
+
+@mixin order($order) {
+  -ms-flex-order: $order;
+  -webkit-flex-order: $order; // WiiU
+  order: $order;
+}
+
+@mixin flex($grow: 1, $shrink: 1, $basis: auto) {
+  -ms-flex: $grow $shrink $basis;
+  flex: $grow $shrink $basis;
+}
+
+@mixin flex-direction($dir) {
+  -ms-flex-direction: $dir;
+  flex-direction: $dir;
+}
+
+@mixin flex-wrap($wrap) {
+  $ms-wrap: $wrap;
+
+  @if $wrap == nowrap {
+    $ms-wrap: none;
+  }
+
+  -ms-flex-wrap: $ms-wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin align-items($align) {
+  $ms-align: $align;
+
+  @if $align == flex-start {
+    $ms-align: start;
+  } @else if $align == flex-end {
+    $ms-align: end;
+  }
+
+  -ms-flex-align: $ms-align;
+  -webkit-flex-align: $ms-align; // WiiU
+  align-items: $align;
+}
+
+@mixin justify-content($align) {
+  $ms-align: $align;
+
+  @if $align == flex-start {
+    $ms-align: start;
+  } @else if $align == flex-end {
+    $ms-align: end;
+  } @else if $align == space-between or $align == space-around {
+    $ms-align: justify;
+  }
+
+  -ms-flex-pack: $ms-align;
+  -webkit-flex-pack: $ms-align; // WiiU
+  justify-content: $align;
+}
+
+@mixin align-content($align) {
+  $ms-align: $align;
+
+  @if $align == flex-start {
+    $ms-align: start;
+  } @else if $align == flex-end {
+    $ms-align: end;
+  } @else if $align == space-between {
+    $ms-align: justify;
+  }
+
+  -ms-flex-line-pack: $ms-align;
+  -webkit-flex-line-pack: $ms-align; // WiiU
+  align-content: $align;
+}
+
+@mixin flex-basis($size) {
+  -ms-flex-preferred-size: $size;
+  flex-basis: $size;
+}
+
+@mixin flex-grow($size) {
+  -ms-flex-positive: $size;
+  flex-grow: $size;
+}
+
+@mixin flex-shrink($size) {
+  -ms-flex-negative: $size;
+  flex-shrink: $size;
+}
+
+@mixin align-self($align) {
+  $ms-align: $align;
+
+  @if $align == flex-start {
+    $ms-align: start;
+  } @else if $align == flex-end {
+    $ms-align: end;
+  }
+
+  -ms-flex-item-align: $ms-align;
+  -webkit-flex-item-align: $ms-align; // WiiU
+  align-self: $align;
+}

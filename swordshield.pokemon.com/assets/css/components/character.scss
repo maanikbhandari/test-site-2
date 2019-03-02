@@ -1,0 +1,21 @@
+
+.char {
+  margin:0 auto 20px;
+  max-width: 275px;
+}
+.char__img {
+
+}
+.char__caption {
+  margin:14px 0;
+  text-align: center;
+  h4 {
+    margin:0;
+  }
+}
+@media #{$medium-up} {
+  .char {
+    max-width:none;
+  }
+}
+

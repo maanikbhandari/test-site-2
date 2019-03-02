@@ -1,0 +1,40 @@
+.lnk {
+  color:get-color('green-darker');
+  font-size: 1.3636363636rem;
+  display: inline-block;
+  padding-right: 28px;
+  position: relative;
+  text-decoration: none;
+  &:after {
+    $img: 'link-arrow.svg';
+    background: image-url($img) no-repeat center top;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 4px;
+    width: 20px;
+    height: 20px;
+  }
+  &:hover {
+    color: get-color('green');
+    &:after {
+      background-position: center bottom;
+    }
+  }
+}
+.section--dark-bg {
+  .lnk {
+    &:after {
+      $img: 'link-arrow--white.svg';
+      background-image: image-url($img);
+    }
+  }
+}
+@media #{$medium-up} {
+  .lnk {
+    &:after {
+      bottom: 9px;
+    }
+  }
+}
+

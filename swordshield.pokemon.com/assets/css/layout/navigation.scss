@@ -1,0 +1,33 @@
+.header-nav {
+	position: relative;
+    z-index: 100;
+}
+
+.site-nav{	
+    position: absolute;
+    z-index: 55;
+    height: auto;
+    width: 100%;
+
+}
+
+.nav__nintendo-console {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	height: 50px;
+    width: 50px;
+}
+
+
+@media #{$medium-up} {
+	.nav__nintendo-console {
+		right: 0px;
+		top: 0px;
+		height: 80px;
+    	width: 80px;
+	}
+
+
+
+}

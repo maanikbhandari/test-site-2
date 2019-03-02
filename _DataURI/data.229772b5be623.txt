@@ -1,0 +1,1 @@
+chrome-extension://koiaokdomkpjdgniimnkhgbilbjgpeak/download/bundle.js

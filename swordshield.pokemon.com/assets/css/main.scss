@@ -1,0 +1,51 @@
+@import "base/normalize",
+        "mixins/all",
+        "settings/all";
+
+
+@import "base/all",
+        "components/all",
+        "layout/all";
+
+/* RESPONSIVE HOOKS
+ * ================
+ */
+body::after {
+  content: 'S';
+  display: none;
+  position: fixed;
+  padding: 10px;
+  background: #FFF;
+  bottom: 0px;
+  right: 0px;
+  z-index: 9999;
+}
+
+body[data-env="dev"]:after,
+body[data-env="local"]:after {
+  display: block;
+}
+
+@media #{$medium-up} {
+  body::after {
+    content: 'M';
+  }
+}
+
+@media #{$large-up} {
+  body::after {
+    content: 'L';
+  }
+}
+
+@media #{$xlarge-up} {
+  body::after {
+    content: 'XL';
+  }
+}
+
+@media #{$xxlarge-up} {
+  body::after {
+    content: 'XXL';
+  }
+}

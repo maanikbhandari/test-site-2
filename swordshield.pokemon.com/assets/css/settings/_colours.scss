@@ -1,0 +1,86 @@
+$colors: (
+  'blue':#0096d4,
+  'brown':#9d6c29,
+  'black':#1C1C1C,
+  'green':#41ac00,
+  'green-dark':#37B184,
+  'green-darker': #049e38,
+  'white': #ffffff,
+  'gray': #999999,
+  'gray-light': #999999,
+  'gray-dark' : #393939,
+  'purple' : #65609F,
+  'orange' : #d43c00
+);
+
+$gradients: (
+  'orange':     (#FAD961, #F76B1C),
+  'blue-sky':   (#007AD1, #05D4E5),
+  'blue':       (#6AEEFF, #3023AE),
+  'purple':     (#C86DD7, #3023AE),
+  'green':      (#B4EC51, #429321),
+  'green-blue': (#B0F464, #429BDD),
+  'green-aqua': (#43F7BB, #00D5C6),
+  'green-dark': (#2E9334, #025A28),
+  'red':        (#FFAC94, #EC140B),
+  'yellow':     (#FFD83B, #FFEA96)
+);
+
+$body-text-color: get-color('gray-dark');
+
+$hero-header-color: get-color('purple');
+
+//bg ellipse color
+$bg-ellipse-color: linear-gradient(0deg, #FFFFFF 0%, #F6FBFD 8%, #98CCE6 72%);
+
+//buttons
+$button-border-color-fallback: get-color('purple');
+$button-border-gradient: linear-gradient(-45deg, #37B184 0%, #54E48C 100%);
+$button-bg-color: get-color('white');
+$button-text-color: get-color('white');
+$button-bg-color: get-color('purple');
+$button-bg-color-hover: #fff;
+$button-text-color-hover: get-color('purple');
+
+//pokeball
+$pokeball-header-color: get-color('gray-light');
+
+//footer
+$footer-text-color: get-color('white');
+$footer-background: get-color('gray-dark');
+
+//lang switcher button
+$lang-switcher-border-color: get-color('purple');
+$lang-switcher-background: get-color('white');
+$lang-switcher-text-color: get-color('black');
+$lang-switcher-background-hover: get-color('purple');
+$lang-switcher-text-color-hover: get-color('white');
+$lang-switcher-border-color-hover: get-color('white');
+
+//social links
+$social-border-color: get-color('purple');
+$social-background: get-color('white');
+$social-icon-color: get-color('black');
+$social-background-hover: get-color('purple');
+$social-icon-color-hover: get-color('white');
+$social-border-color-hover: get-color('white');
+
+//findus links
+$findus-border-color: get-color('purple');
+$findus-background: get-color('white');
+$findus-icon-color: get-color('block');
+$findus-background-hover: get-color('purple');
+$findus-icon-color-hover: get-color('white');
+$social-border-color-hover: get-color('white');
+
+
+//modal
+$modal-overlay-color: get-color('white');
+$modal-overlay-opacity: .95;
+$modal-header-color: get-color('black');
+//lang switcher modal links
+$lang-switcher-modal-link-border-color: get-color('purple');
+$lang-switcher-modal-link-background: transparent;
+$lang-switcher-modal-link-text-color: get-color('black');
+$lang-switcher-modal-link-text-color-hover: get-color('white');
+$lang-switcher-modal-link-background-hover: get-color('purple');
